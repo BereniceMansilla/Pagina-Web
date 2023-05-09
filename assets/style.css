@@ -1,0 +1,196 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* paleta de colores */
+:root {
+  --electric-blue: #73f5fcff;
+  --electric-blue-2: #50e0e8ff;
+  --robin-egg-blue: #2ccbd3ff;
+  --bright-pink-crayola: #ee5b6eff;
+  --salmon-pink: #e298a2ff;
+  --timberwolf: #d5d5d5ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Saira", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    background: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px 0px 30px;
+}
+
+.logo {
+    height: 120px;
+    padding: 16px 0px 16px 0px;
+}
+
+.navbar, 
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar-list a {
+    color: white;
+    background: var(--robin-egg-blue);
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-shadow: 1px 1px 2px var(--timberwolf), 0 0 1em var(--electric-blue), 0 0 0.2em var(--electric-blue-2);
+}
+
+.navbar-list li:first-child > a {
+    color: white;
+    font-weight: 700;
+}
+
+.cart-icon {
+    background-color: rgb(145, 144, 144);
+    text-align: center;
+    border-radius: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+main {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 100%;
+}
+
+#hero {
+    margin-top: 60px;
+    padding: 70px 0px;
+    max-width: 1200px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.hero-info h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 48px;
+    width: 80%;
+    min-width: 500px;
+    font-weight: 600;
+    color: black;
+}
+
+.hero-info p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    width: 100%;
+}
+
+.button-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.button {
+    background-color: var(--electric-blue-2);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 16px;
+    margin: 40px;
+}
+
+.hero-img-slider {
+    width: 400px;
+    height: 450PX;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-left: 80px;
+}
+
+.hero-img-slider ul {
+    display: flex;
+    animation: cambio 15s infinite alternate linear;
+    justify-content: center;
+    width: 400%;
+}
+
+.hero-img-slider img {
+    width: 400px;
+    height: 450px;
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+#about-us {
+    margin: 70px 0px 70px 0px;
+    max-width: 1200px;
+}
+
+.about-us-info h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+    width: 100%;
+    min-width: 500px;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.about-us-info p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+.about-us-img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 40px;
+}
+
+.about-us-img img {
+    height: 200px;
+    width: 200px;
+}
