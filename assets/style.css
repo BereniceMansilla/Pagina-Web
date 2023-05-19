@@ -49,7 +49,7 @@ header {
 
 .navbar-list a {
     color: white;
-    background: var(--robin-egg-blue);
+    background: linear-gradient(to right, #73f5fcff, #2ccbd3ff);
     text-align: center;
     padding: 5px 20px;
     border-radius: 20px;
@@ -118,7 +118,7 @@ main {
 }
 
 .button {
-    background-color: var(--electric-blue-2);
+    background: linear-gradient(70deg, #AE33FE,#73f5fcff);
     color: white;
     padding: 6px 10px;
     border-radius: 16px;
@@ -160,13 +160,13 @@ main {
 }
 
 #about-us {
-    margin: 70px 0px 70px 0px;
+    margin-top: 70px;
     max-width: 1200px;
 }
 
 .about-us-info h1 {
     font-family: "Amatic SC", sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     width: 100%;
     min-width: 500px;
     font-weight: 600;
@@ -174,7 +174,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 .about-us-info p {
@@ -187,10 +187,233 @@ main {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding-top: 40px;
+    padding: 40px;
 }
 
 .about-us-img img {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
 }
+
+
+#info {
+    padding: 70px 0px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#info h2 {
+    font-size: 60px;
+    font-weight: 800;
+    font-family: "Amatic SC", sans-serif;
+}
+
+.info-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.info-card {
+    width: 300px;
+    height: 290px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-image: linear-gradient(45deg, #73f5fcff, #1748D8) 1;
+    gap: 20px;
+}
+
+.info-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.info-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+}
+
+.info-card p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+}
+
+#contact-container {
+    padding: 80px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+
+.contact-us h1 {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: "Amatic SC", sans-serif;
+    padding: 0px 0px 30px 15px;
+}
+
+.contact-img-info {
+    padding: 15px;
+}
+
+
+.contact-img-info img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.contact-img-info span { 
+    align-items: center;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--timberwolf);
+}
+
+.footer-img {
+    margin-left: 10px;
+}
+
+.footer-img img {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+}
+
+.footer-text span {
+    font-size: 18px;
+    font-weight: 800;
+    font-family: "Quicksand", sans-serif;
+    background: linear-gradient(45deg, #2ccbd3ff, #1748D8, #AE33FE);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.footer-logo {
+    margin-right: 15px;
+}
+
+.footer-logo img {
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+}
+
+/* MENU HAMBURGUESA */
+
+#menu-toggle, #cart-toggle, .menu-label {
+    display: none;
+}
+
+
+.menu-label img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+}
+
+.cart {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    padding: 50px 30px;
+    border-left: 1px solid var(--timberwolf);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: calc(100vh - 65px);
+    overflow-y: scroll;
+    display: none;
+    z-index: 2;
+}
+
+.cart::-webkit-scrollbar {
+    display: none;
+}
+
+.cart h2 {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Amatic SC", sans-serif;
+    text-align: center;
+}
+
+#cart-toggle:checked + .cart {
+    display: flex;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid var(--electric-blue-2);
+    border-radius: 10px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+}
+
+.item-title {
+    font-size: 16px;
+    font-weight: 600;
+    font-family:  "Quicksand", sans-serif;
+}
+
+.item-price {
+    font-size: 16px;
+    font-weight: 400;
+    font-family:  "Quicksand", sans-serif;
+}
+
+.item-handler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.quantity-handler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 10px;
+    background-color: var(--electric-blue-2);
+    border-radius: 13px;
+    color: whitesmoke;
+    font-weight: 800;
+}
+

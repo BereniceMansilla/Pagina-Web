@@ -6,25 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cocco'Shop</title>
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
   </head>
   <body>
     <header>
       <img
         src="./assets/imagenes/coccos-logo.png"
         alt="Logo Coccoshop"
-        class="logo"
-      />
+        class="logo"/>
       <nav class="navbar">
+
+      <!--     LABEL MENU     --> 
+
+        <label for="menu-toggle" class="menu-label">
+          <img src="./assets/imagenes/menu.png" alt="menu-icon" />
+        </label>
+
+        <input type="checkbox" id="menu-toggle">
+
         <ul class="navbar-list">
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Productos</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
-        <img
+
+        <!-- LABEL CARRITO-->
+
+        <label for="cart-toggle" class="cart-label">
+          <img
           src="./assets/imagenes/carrito.png"
           alt="carrito"
-          class="cart-icon"
-        />
+          class="cart-icon"/>
+        </label>
+        <input type="checkbox" id="cart-toggle">
+
+        <div class="cart">
+          <h2>Tus Productos</h2>
+
+          <div class="cart-item">
+            <img src="./assets/imagenes/Pava.png" alt="carrito">
+            <div class="item-info">
+              <h3 class="item-title">Pava Electrica</h3>
+              <span class="item-price">$4.999</span>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img src="./assets/imagenes/trimmer.jpg" alt="carrito">
+            <div class="item-info">
+              <h3 class="item-title">Trimmer Recargable</h3>
+              <span class="item-price">$3.600</span>
+            </div>
+
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img src="./assets/imagenes/foco wifi.jpg" alt="carrito">
+            <div class="item-info">
+              <h3 class="item-title">Foco Wifi</h3>
+              <span class="item-price">$1.499</span>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+        </div>
+
       </nav>
     </header>
 
@@ -56,6 +118,9 @@
       <section id="about-us">
         <div class="about-us-info">
           <h1>Sobre Nosotros</h1>
+          <div class="about-us-img">   
+          <img src="./assets/imagenes/informacion.png" alt="contacto">
+          </div>
           <p>
             Somos una empresa familiar creada a principios de 2023 destinada a la
             venta minorista. <br />
@@ -64,11 +129,69 @@
             Comunicate con nosotros para resolver cualquier duda sobre tu compra.
           </p>
         </div>
+      </section>
 
-        <div class="about-us-img">   
-            <img src="./assets/imagenes/contacto.png" alt="contacto">
+      <section id="info">
+        <h2>Nuestros Servicios</h2>
+        <div class="info-cards-container">
+          <div class="info-card">
+            <img src="./assets/imagenes/entrega-rapida.png" alt="Envíos" />
+            <h3>Envíos</h3>
+            <p>Contamos con envios en el día y por correo a todo el país.</p>
+          </div>
+          <div class="info-card">
+            <img src="./assets/imagenes/garantia.png" alt="garantía" />
+            <h3>Garantia</h3>
+            <p>Ofrecemos garantía de 1 mes en todos nuestros productos.</p>
+          </div>
+          <div class="info-card">
+            <img src="./assets/imagenes/24-horas.png" alt="atención 24hs" />
+            <h3>Atención al Cliente</h3>
+            <p>Brindamos atención online las 24hs.</p>
+          </div>
         </div>
       </section>
+
+      <section id="contact-container">
+          <div class="contact-us">
+            <h1>Contactanos</h1>
+            <div class="contact-img-info">
+              <img src="./assets/imagenes/ubicacion.png" alt="ubicación">
+              <span>General San Martin, Buenos Aires, Argentina</span>
+            </div>
+
+            <div class="contact-img-info">
+              <img src="./assets/imagenes/email.png" alt="email">
+              <span>coccoshop2023@hotmail.com</span>
+            </div>
+
+            <div class="contact-img-info">
+              <img src="./assets/imagenes/telefono.png" alt="telefono">
+              <span>+54 11 2455 5555</span>
+            </div>
+          </div>
+
+          <div class="contact-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6569.937041352317!2d-58.539911446954164!3d-34.57966306827756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb776b321c597%3A0x7bd8d5aa05d35e87!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1684461858512!5m2!1ses!2sar" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+      </section>
     </main>
+
+    <footer>
+      <div class="footer-img">
+        <img src="./assets/imagenes/github.png" alt="github">
+        <img src="./assets/imagenes/facebook.png" alt="facebook">
+        <img src="./assets/imagenes/instagram.png" alt="instagram">
+        <img src="./assets/imagenes/whatsapp.png" alt="whatsapp">
+      </div>
+
+      <div class="footer-text">
+        <span> COCCO'SHOP </span>
+      </div>
+
+      <div class="footer-logo">
+        <img src="./assets/imagenes/coccos-logo.png" alt="cocco'shop">
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,257 @@
+/* TABLET */
+
+@media (max-width: 992px){
+    .navbar {
+        gap: 10px;
+    }
+
+    .cart-icon {
+        height: 60px;
+        margin-right: 0rem;
+        margin-top: 15px;
+    }
+
+    .navbar-list {
+        position: absolute;
+        top: 75px;
+        left: 5%;
+        right: 5%;
+        flex-direction: column;
+        height: 200px;
+        background-color: rgb(235, 232, 232);
+        border: 2px solid var(--robin-egg-blue);
+        border-top: none;
+        border-radius: 0px 0px 15px 15px;
+        padding: 45px 30px;
+        z-index: 2;
+        display: none;
+    }
+
+    .navbar-list a {
+        font-size: 14px;
+    }
+
+    /* MOSTRAR ICONO DEL MENU */
+
+    .menu-label {
+        display: flex;
+        order: 2;
+        cursor: pointer;
+    }
+
+    .menu-label img {
+        height: 45px;
+        width: 45px;
+    }
+
+    #menu-toggle:checked + .navbar-list {
+        display: flex;
+    }
+
+    /* HERO */
+
+    .hero-info {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hero-info h1 {
+        width: 90%;
+        max-width: 300px;
+        min-width: unset;
+    }
+
+    .hero-info p {
+        width: 60%;
+        max-width: 600px;
+    }
+
+    .menu-label img {
+        height: 40px;
+        width: 40px;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-img-slider {
+        max-width: 400px;
+        min-width: 400px;
+        margin-left: 0px;
+    }
+
+    .hero-img-slider img{
+        height: 400px;
+        width: 400px;
+    }
+
+    .about-us-info {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .about-us-info h1 {
+        font-size: 50px;
+    }
+
+    .about-us-info p {
+        padding: 0px 30px 0px 30px;
+    }
+
+    #contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding-top: 20px;
+    }
+
+    .contact-us h1 {
+        text-align: center;
+        padding: 0px;
+    }
+
+    .contact-img-info {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-map iframe {
+        width: 300px;
+        height: 300px;
+    }
+
+    footer {
+        height: 50px;
+    }
+
+
+    .footer-img img {
+        height: 30px;
+        width: 30px;
+        margin: 0px;
+        gap: 50px;
+    }
+
+    
+    .footer-logo img {
+        margin:0px;
+        width: 50px;
+        height: 45px;
+    }
+
+    .footer-text span { 
+        font-size: 14px;
+    }
+}
+
+/* CELULAR */
+
+@media (max-width: 576px) {
+    .cart {
+        left: 0;
+        width: 100%;
+        height: 70%;
+        border: none;
+        background-color: rgb(241, 241, 241);
+        border-radius: 20px;
+    }
+
+    .cart-item {
+        flex-wrap: wrap;
+    }
+
+    .hero-img-slider {
+        max-width: 200px;
+        min-width: 200px;
+        margin-left: 0px;
+        height: 200px;
+        margin: 50px;
+    }
+
+    .hero-img-slider img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .about-us-info {
+        max-width: 100%;
+        min-width: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-us-info h1 {
+        min-width: unset;
+    }
+    .about-us-info p {
+        max-width: 70%;
+        padding: 0px;
+    }
+
+    header {
+        padding: 0px 10px;
+    }
+
+    #info h2 {
+        font-size: 50px;
+    }
+
+    .info-card h3 {
+        font-size: 18px;
+    }
+
+    .info-card {
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-card img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .contact-us h1 {
+        font-size: 50px;
+    }
+
+    .contact-map iframe {
+        width: 250px;
+        height: 250px;
+    }
+
+    .footer-img img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-text span {
+        font-size: 12px;
+    }
+}
